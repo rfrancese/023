@@ -1,8 +1,8 @@
 package com.apgb.theline;
 
 public class Coordinate {
-	float y;
-	int x;
+	public float y;
+	public int x;
 	
 	public Coordinate(int nx, float ny){
 		x=nx;

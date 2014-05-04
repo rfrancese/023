@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
             android:src="@drawable/logomenu" />
 
         <TextView
@@ -29,7 +29,7 @@
             android:text="@string/menu1"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFFFFF"
-            android:textSize="25sp" />
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/menu2"
@@ -41,7 +41,7 @@
             android:text="@string/menu2"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFFFFF"
-            android:textSize="25sp" />
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/menu3"
@@ -53,7 +53,7 @@
             android:text="@string/menu3"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFFFFF"
-            android:textSize="25sp" />
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/menu4"
@@ -65,7 +65,7 @@
             android:text="@string/menu4"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFFFFF"
-            android:textSize="25sp" />
+            android:textSize="25dp" />
     </LinearLayout>
 
 </RelativeLayout>

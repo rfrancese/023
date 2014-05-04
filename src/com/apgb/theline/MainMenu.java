@@ -1,29 +1,38 @@
 package com.apgb.theline;
 
-import com.apgb.theline.util.SystemUiHider;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- * 
- * @see SystemUiHider
- */
+
+
+
 public class MainMenu extends Activity {
+	
+	public class newGameListner implements View.OnClickListener{
+
+		@Override
+		public void onClick(View v) {
+			Intent intent;
+			intent = new Intent(MainMenu.this, NewGame.class);
+			startActivity(intent);
+			
+		}
+		
+	}
+	
+	TextView newGame;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		setContentView(R.layout.activity_main_menu);
-
+		newGame=(TextView) findViewById(R.id.menu1);
+		newGame.setOnClickListener(new newGameListner());
 		
 }
 }
