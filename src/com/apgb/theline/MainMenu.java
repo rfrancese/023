@@ -31,7 +31,7 @@ public class MainMenu extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_menu);
-		newGame=(TextView) findViewById(R.id.menu1);
+		newGame=(TextView) findViewById(R.id.retry);
 		newGame.setOnClickListener(new newGameListner());
 		
 }

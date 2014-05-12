@@ -4,9 +4,9 @@
     <string name="app_name">Surfline</string>
     <string name="Title1">the</string>
     <string name="Title2">line</string>
-    <string name="menu1">Nuova Partita</string>
+    <string name="menu1">New Game</string>
     <string name="menu2">Tutorial</string>
-    <string name="menu3">Punteggi</string>
-    <string name="menu4">Esci</string>
+    <string name="menu3">Score</string>
+    <string name="menu4">Exit</string>
 
 </resources>

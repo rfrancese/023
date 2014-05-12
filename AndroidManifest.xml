@@ -3,7 +3,7 @@
     package="com.apgb.theline"
     android:versionCode="1"
     android:versionName="1.0" >
-
+<uses-permission android:name="android.permission.VIBRATE"/>
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
@@ -38,6 +38,12 @@
         
           <activity
             android:name="com.apgb.theline.NewGame"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+           <activity
+            android:name="com.apgb.theline.GameOver"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
