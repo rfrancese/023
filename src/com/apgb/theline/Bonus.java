@@ -8,14 +8,18 @@ public class Bonus {
 	public int x,y;
 	public int heigth,width;
 	public boolean active=false;
-	public Random random = new Random();
+	public Random random;
 	public int indiceBonus;
-	public Timer tnt=new Timer();
-	public Timer ta=new Timer();
+	public Timer tnt;
+	public Timer ta;
 	public int timernt;// timer not touch
 	public int timera; // timer quando il bonus e attivo
+	
 	public Bonus(int i, int widthCanvas, int heigthCanvas, int widthBonus, int heigthBonus)
 	{
+		tnt=new Timer();
+		ta=new Timer();
+		random=new Random();
 		timernt=10;
 		timera=5;
 		 tnt.scheduleAtFixedRate(new TimerTask() {
